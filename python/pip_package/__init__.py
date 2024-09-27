@@ -26,6 +26,6 @@ from deepmind_lab import dmenv_module
 import pkg_resources
 
 _deepmind_lab = imp.load_dynamic(
-    __name__, pkg_resources.resource_filename(__name__, 'deepmind_lab.so'))
+    __name__, pkg_resources.resource_filename(__name__, '_main/deepmind_lab.so'))
 
 Lab = _deepmind_lab.Lab  # needed from within dmenv_module
